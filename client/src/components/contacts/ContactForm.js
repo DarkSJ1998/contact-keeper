@@ -6,7 +6,7 @@ const ContactForm = () => {
 
 	const { addContact, current, clearCurrent, updateContact } = contactContext;
 
-	// Runs as soon as component is mounted (componentDidMount)
+	// Runs as soon as component is mounted (componentDidMount) and only when contactContext and current changes
 	useEffect(() => {
 		if (current !== null) {
 			setContact(current);
